@@ -6,7 +6,7 @@ import HookUseEffect from "./components/HookUseEffect";
 import Navbar from "./components/Navbar";
 import Form from "./components/Form";
 import List from "./components/List";
-import ExerciceFruits from "./components/ExerciceFruits";
+import ExerciceFruits from "./components/exerciceFruits/ExerciceFruits";
 
 function App() {
   return (

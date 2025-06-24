@@ -28,7 +28,7 @@ function Form() {
       <input
         type="checkbox"
         onChange={(e) => setChecked(e.target.checked)}
-        value={checked}
+        checked={checked}
       />
       {checked && <p>Case cochée !</p>}
       {checked ? <p>Case cochée !</p> : <p>Case non cochée !</p>}
