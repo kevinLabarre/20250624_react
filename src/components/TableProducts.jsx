@@ -1,12 +1,16 @@
 import axios from "axios";
 
-export const TableProducts = ({ products }) => {
+export const TableProducts = ({ products, updateProduct }) => {
   // Rajouter un bouton pour pouvoir supprimer les produits
 
   const handleDelete = (id) => {
     axios
       .delete(`http://localhost:3001/products/${id}`)
-      .then((resp) => console.log(resp.data))
+      .then((resp) =>
+        updateProduct((prev) =>
+          prev.filter((product) => product.id !== resp.data.id)
+        )
+      )
       .catch((e) => console.error(e.message));
   };
 
@@ -20,6 +24,7 @@ export const TableProducts = ({ products }) => {
             <th>Prix</th>
             <th>Quantité</th>
             <th>Catégorie</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -30,9 +35,11 @@ export const TableProducts = ({ products }) => {
               <td>{product.price}</td>
               <td>{product.number}</td>
               <td>{product.category}</td>
-              <button onClick={() => handleDelete(product.id)}>
-                supprimer
-              </button>
+              <td>
+                <button onClick={() => handleDelete(product.id)}>
+                  supprimer
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FormWithReactHookForm } from "./FormWithReactHookForm";
 
 function Form() {
   const [name, setName] = useState("");
@@ -32,6 +33,9 @@ function Form() {
       />
       {checked && <p>Case cochée !</p>}
       {checked ? <p>Case cochée !</p> : <p>Case non cochée !</p>}
+
+      <h2>Les formulaires avec React-hook-form</h2>
+      <FormWithReactHookForm />
     </>
   );
 }

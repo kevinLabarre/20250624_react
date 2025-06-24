@@ -27,6 +27,13 @@
       "number": 4,
       "name": "Broccoli",
       "id": "4"
+    },
+    {
+      "id": "896e",
+      "name": "Pomme",
+      "price": "2",
+      "number": "2",
+      "category": "Fruits"
     }
   ]
 }

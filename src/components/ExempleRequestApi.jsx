@@ -51,7 +51,7 @@ export const ExempleRequestApi = () => {
   return (
     <>
       <h2>Exemples</h2>
-      <TableProducts products={products} />
+      <TableProducts products={products} updateProduct={setProducts} />
 
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="nom" name="name" />
