@@ -9,6 +9,7 @@ import List from "./components/List";
 import ExerciceFruits from "./components/exerciceFruits/ExerciceFruits";
 import { RequestApi } from "./components/RequestApi";
 import { Flux } from "./components/Flux";
+import { CustomHook } from "./components/CustomHook";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/liste" element={<List />} />
           <Route path="/exercice" element={<ExerciceFruits />} />
           <Route path="/requete-api" element={<RequestApi />} />
+          <Route path="/hook-perso" element={<CustomHook />} />
           <Route path="/flux" element={<Flux />} />
           {/* <Route path */}
         </Routes>

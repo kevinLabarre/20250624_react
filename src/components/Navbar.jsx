@@ -9,6 +9,7 @@ function Navbar() {
         <a href="/liste">les listes</a>
         <a href="/requete-api">les Requetes Http</a>
         <a href="/flux">les Flux</a>
+        <a href="/hook-perso">les Hooks perso.</a>
         <a href="/exercice">exercice</a>
       </nav>
     </section>
