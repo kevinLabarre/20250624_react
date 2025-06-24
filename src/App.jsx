@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Form from "./components/Form";
 import List from "./components/List";
 import ExerciceFruits from "./components/exerciceFruits/ExerciceFruits";
+import { RequestApi } from "./components/RequestApi";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/formulaire" element={<Form />} />
           <Route path="/liste" element={<List />} />
           <Route path="/exercice" element={<ExerciceFruits />} />
+          <Route path="/requete-api" element={<RequestApi />} />
           {/* <Route path */}
         </Routes>
       </BrowserRouter>
