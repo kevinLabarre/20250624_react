@@ -1,16 +1,19 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <section>
       <nav>
-        <a href="/">Accueil </a>
-        <a href="/hook-use-state">useState </a>
-        <a href="/hook-use-effect">useEffect </a>
-        <a href="/formulaire">les formulaires</a>
-        <a href="/liste">les listes</a>
-        <a href="/requete-api">les Requetes Http</a>
-        <a href="/flux">les Flux</a>
-        <a href="/hook-perso">les Hooks perso.</a>
-        <a href="/exercice">exercice</a>
+        <Link to="/">Accueil </Link>
+        <Link to="/hook-use-state">useState </Link>
+        <Link to="/hook-use-effect">useEffect </Link>
+        <Link to="/formulaire">les formulaires</Link>
+        <Link to="/liste">les listes</Link>
+        <Link to="/requete-api">les Requetes Http</Link>
+        <Link to="/flux">les Flux</Link>
+        <Link to="/hook-perso">les Hooks perso.</Link>
+        <Link to="/hook-use-memo">useMemo</Link>
+        <Link to="/exercice">exercice</Link>
       </nav>
     </section>
   );

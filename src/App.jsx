@@ -10,12 +10,13 @@ import ExerciceFruits from "./components/exerciceFruits/ExerciceFruits";
 import { RequestApi } from "./components/RequestApi";
 import { Flux } from "./components/Flux";
 import { CustomHook } from "./components/CustomHook";
+import { HookUseMemo } from "./components/useMemo/HookUseMemo";
 
 function App() {
   return (
     <>
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<JsxTheorie />} />
           <Route path="/hook-use-state" element={<HookUseState />} />
@@ -26,6 +27,8 @@ function App() {
           <Route path="/requete-api" element={<RequestApi />} />
           <Route path="/hook-perso" element={<CustomHook />} />
           <Route path="/flux" element={<Flux />} />
+          <Route path="/hook-use-memo" element={<HookUseMemo />} />
+
           {/* <Route path */}
         </Routes>
       </BrowserRouter>
